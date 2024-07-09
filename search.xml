@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Java(旧)笔记01-test</title>
+      <link href="/2024/07/06/Java-diary/"/>
+      <url>/2024/07/06/Java-diary/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Java名词"><a href="#Java名词" class="headerlink" title="Java名词"></a>Java名词</h3><ul><li><strong>对象</strong>：对象是类的一个实例，有状态和行为。例如，一条狗是一个对象，它的状态有：颜色、名字、品种；行为有：摇尾巴、叫、吃等。</li><li><strong>类</strong>：类是一个模板，它描述一类对象的行为和状态。</li><li><strong>方法</strong>：方法就是行为，一个类可以有很多方法。逻辑运算、数据修改以及所有动作都是在方法中完成的。</li><li><strong>实例变量</strong>：每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。</li></ul><h3 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h3><p><strong>private</strong> : 在同一类内可见。使用对象：变量、方法。 注意：不能修饰类（外部类）<br><strong>default</strong> (即缺省，什么也不写，不使用任何关键字）: 在同一包内可见，不使用任何修饰符。使用对象：类、接口、变量、方法。<br><strong>protected</strong> : 对同一包内的类和所有子类可见。使用对象：变量、方法。 注意：不能修饰类（外部类）。<br><strong>public</strong> : 对所有类可见。使用对象：类、接口、变量、方法</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0pvdXJXb24vaW1hZ2UvbWFzdGVyL0phdmElRTUlOUYlQkElRTclQTElODAlRTglQUYlQUQlRTYlQjMlOTUvSmF2YSVFOCVBRSVCRiVFOSU5NyVBRSVFNCVCRiVBRSVFOSVBNSVCMCVFNyVBQyVBNi5wbmc?x-oss-process=image/format,png" alt="img"></p><h3 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a><strong>Java基本数据类型</strong></h3><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0pvdXJXb24vaW1hZ2UvbWFzdGVyL0phdmElRTUlOUYlQkElRTclQTElODAlRTglQUYlQUQlRTYlQjMlOTUvSmF2YSVFNSU5RiVCQSVFNiU5QyVBQyVFNiU5NSVCMCVFNiU4RCVBRSVFNyVCMSVCQiVFNSU5RSU4Qi5wbmc?x-oss-process=image/format,png" alt="img"></p><h3 id="封装，继承和多态"><a href="#封装，继承和多态" class="headerlink" title="封装，继承和多态"></a>封装，继承和多态</h3><p><strong>封装</strong>就是将类信息隐藏在类内部，不允许外部程序直接访问，而是通过调用类的方法去访问，良好的封装能减少耦合，增加安全性。<br><strong>继承</strong>就是从已有的类派生出新的类，新的类继承父类的属性和方法，并扩展新的能力，极大提高了代码的复用行和易维护性。<br><strong>多态</strong>是指同一个行为具有多种形式的表现，具体体现在继承，重写，重载，父类引用指向子类对象等，多态体现出面向对象的灵活性。<br>另外面向对象还有抽象的特性，指把客观事物用代码抽象出来。</p><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><p>编写 Java 程序时，应注意以下几点：</p><ul><li><p><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</p></li><li><p><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</p></li><li><p><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</p></li><li><p><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</p></li><li><p><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</p></li></ul><h3 id="static变量"><a href="#static变量" class="headerlink" title="static变量"></a>static变量</h3><p>static变量也称为静态变量，静态变量和非静态变量的区别：</p><ul><li><p>静态变量被所有对象共享，在内存中只有一个副本，在类初次加载的时候才会初始化</p></li><li><p>非静态变量是对象所拥有的，在创建对象的时候被初始化，存在多个副本，各个对象拥有的副本互不影响</p></li></ul><h3 id="jdk1-5之后的三大版本"><a href="#jdk1-5之后的三大版本" class="headerlink" title="jdk1.5之后的三大版本"></a>jdk1.5之后的三大版本</h3><p>Java SE（J2SE，Java 2 Platform Standard Edition，标准版）<br>Java SE 以前称为 J2SE。它允许开发和部署在桌面、服务器、嵌入式环境和实时环境中使用的 Java 应用程序。Java SE 包含了支持 Java Web 服务开发的类，并为Java EE和Java ME提供基础。</p><p>Java EE（J2EE，Java 2 Platform Enterprise Edition，企业版）<br>Java EE 以前称为 J2EE。企业版本帮助开发和部署可移植、健壮、可伸缩且安全的服务器端Java 应用程序。Java EE 是在 Java SE 的基础上构建的，它提供 Web 服务、组件模型、管理和通信 API，可以用来实现企业级的面向服务体系结构（service-oriented architecture，SOA）和 Web2.0应用程序。2018年2月，Eclipse 宣布正式将 JavaEE 更名为 JakartaEE</p><p>Java ME（J2ME，Java 2 Platform Micro Edition，微型版）<br>Java ME 以前称为 J2ME。Java ME 为在移动设备和嵌入式设备（比如手机、PDA、电视机顶盒和打印机）上运行的应用程序提供一个健壮且灵活的环境。Java ME 包括灵活的用户界面、健壮的安全模型、许多内置的网络协议以及对可以动态下载的连网和离线应用程序的丰富支持。基于 Java ME 规范的应用程序只需编写一次，就可以用于许多设备，而且可以利用每个设备的本机功能。</p><h3 id="JVM、JRE和JDK的关系"><a href="#JVM、JRE和JDK的关系" class="headerlink" title="JVM、JRE和JDK的关系"></a>JVM、JRE和JDK的关系</h3><p><strong>JVM</strong><br>Java Virtual Machine是Java虚拟机，Java程序需要运行在虚拟机上，不同的平台有自己的虚拟机，因此Java语言可以实现跨平台。</p><p><strong>JRE</strong><br>Java Runtime Environment包括Java虚拟机和Java程序所需的核心类库等。核心类库主要是java.lang包：包含了运行Java程序必不可少的系统类，如基本数据类型、基本数学函数、字符串处理、线程、异常处理类等，系统缺省加载这个包</p><p>如果想要运行一个开发好的Java程序，计算机中只需要安装JRE即可。</p><p><strong>JDK</strong><br>Java Development Kit是提供给Java开发人员使用的，其中包含了Java的开发工具，也包括了JRE。所以安装了JDK，就无需再单独安装JRE了。其中的开发工具：编译工具(javac.exe)，打包工具(jar.exe)等</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0pvdXJXb24vaW1hZ2UvbWFzdGVyL0phdmElRTclQUUlODAlRTQlQkIlOEIvSlZNJkpSRSZKREslRTUlODUlQjMlRTclQjMlQkIlRTUlOUIlQkUucG5n?x-oss-process=image/format,png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> -Java -study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test01</title>
       <link href="/2024/06/23/test01/"/>
       <url>/2024/06/23/test01/</url>
